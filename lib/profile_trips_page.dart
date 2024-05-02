@@ -45,3 +45,17 @@ class ProfilePlace extends StatelessWidget {
     );
   }
 }
+
+class ProfileTripsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Profile Trips'),
+      ),
+      body: Center(
+        child: Text('Profile Trips Page'),
+      ),
+    );
+  }
+}
