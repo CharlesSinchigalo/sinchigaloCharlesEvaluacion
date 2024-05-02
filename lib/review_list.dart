@@ -11,7 +11,7 @@ class ReviewList extends StatelessWidget {
       children: <Widget>[
         Text(
           'All reviews', // Texto aumentado
-          style: TextStyle(fontSize: 20), // Aumentar el tamaño del texto
+          style: TextStyle(fontSize: 30), // Aumentar el tamaño del texto
         ),
         Row(
           children: <Widget>[
