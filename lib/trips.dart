@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_trips_app/home_trips_page.dart';
 import 'search_trips_page.dart';
-import 'profile_trips_page.dart';
 
 class Trips extends StatefulWidget {
   const Trips({super.key});
