@@ -14,8 +14,8 @@ class SearchTripsPage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color(0xFF4268D3),
-              const Color(0xFF1976D2)
+              Color.fromARGB(255, 66, 211, 83),
+              Color.fromARGB(255, 64, 196, 12)
             ], // Fondo degradado
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

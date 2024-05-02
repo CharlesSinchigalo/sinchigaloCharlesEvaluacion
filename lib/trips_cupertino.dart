@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'home_trips_page.dart';
 import 'search_trips_page.dart';
-import 'profile_trips_page.dart';
 
 class TripsCupertino extends StatelessWidget {
   static final List<Widget> navigationWidget = [
