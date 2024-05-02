@@ -18,7 +18,6 @@ class _TripsState extends State<Trips> {
   final List<Widget> widgetChildren = [
     const HomeTripsPage(),
     const SearchTripsPage(),
-    const ProfileTripsPage(),
   ];
 
   void onTapTapped(int index) {

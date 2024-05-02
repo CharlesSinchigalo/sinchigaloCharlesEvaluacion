@@ -1,39 +1,47 @@
 import 'package:flutter/material.dart';
 import 'place.dart';
-import 'profile_place.dart';
+import 'profile_place_info.dart';
 
-class ProfilePlacesList extends StatelessWidget {
-  final Place place1 = Place(
-    name: 'Knuckles Mountains Range',
-    where: 'Hiking. Water fall hunting. Natural bath',
-    type: 'Scenery & Photography',
-    steps: '123,123,123',
-  );
-  final Place place2 = Place(
-    name: 'Mountains',
-    where: 'Hiking. Water fall hunting. Natural bath',
-    type: 'Scenery & Photography',
-    steps: '321,321,321',
-  );
+class ProfilePlace extends StatelessWidget {
+  final String image;
+  final Place place;
 
-  // const ProfilePlacesList({super.key});
-  ProfilePlacesList({super.key});
+  const ProfilePlace({Key? key, required this.image, required this.place})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final photoCard = Container(
       margin: const EdgeInsets.only(
         top: 10.0,
-        left: 20.0,
-        right: 20.0,
-        bottom: 10.0,
+        bottom: 70.0,
       ),
-      child: Column(
-        children: [
-          ProfilePlace(image: 'assets/images/mountains.jpg', place: place1),
-          ProfilePlace(image: 'assets/images/snow.jpg', place: place2),
+      height: 220.0,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage(image),
+        ),
+        borderRadius: const BorderRadius.all(
+          Radius.circular(20.0),
+        ),
+        color: Colors.red,
+        boxShadow: const <BoxShadow>[
+          BoxShadow(
+            color: Colors.black38,
+            blurRadius: 10.0,
+            offset: Offset(0.0, 5.0),
+          ),
         ],
       ),
+    );
+
+    return Stack(
+      alignment: const Alignment(0.0, 0.8),
+      children: [
+        photoCard,
+        ProfilePlaceInfo(place: place),
+      ],
     );
   }
 }

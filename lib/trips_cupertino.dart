@@ -8,7 +8,6 @@ class TripsCupertino extends StatelessWidget {
   static final List<Widget> navigationWidget = [
     const HomeTripsPage(),
     const SearchTripsPage(),
-    const ProfileTripsPage(),
   ];
 
   const TripsCupertino({super.key});
